@@ -1,4 +1,10 @@
 StackworldRails::Application.routes.draw do
+  get "rooms/new"
+  get "rooms/edit"
+  get "rooms/show"
+
+  root :to => "rooms#show"
+  resources :rooms
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -39,7 +45,7 @@ StackworldRails::Application.routes.draw do
   #       get 'recent', on: :collection
   #     end
   #   end
-  
+
   # Example resource route with concerns:
   #   concern :toggleable do
   #     post 'toggle'

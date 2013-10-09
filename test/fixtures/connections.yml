@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  starting_room_id: 
+  ending_room_id: 
+  connection_name: MyString
+
+two:
+  starting_room_id: 
+  ending_room_id: 
+  connection_name: MyString
