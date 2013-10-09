@@ -13,6 +13,16 @@
       <div id="sidebar-wrapper">
         <ul class="sidebar-nav">
           <li class="sidebar-brand"><a href="#">StackWorld</a></li>
+          <% if @player %>
+            <li>You are <%= @player.name %></li>
+            <li><img src="<%= @player.avatar_image %>"></li>
+          <% end %>
+          <li><a href="/create_room">Create New Room</a></li>
+          <% if @room %>
+            <li><a href="/room/<%= @room.id %>/edit">Edit Room</a></li>
+            <li><a href="/room/<%= @room.id %>/connections/new">Add Connection</a></li>
+            <li><a href="/room/<%= @room.id %>/items/new">Add Item</a></li>
+          <% end %>
         </ul>
       </div>
 
